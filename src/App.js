@@ -5,7 +5,6 @@ import jwt_decode from 'jwt-decode'
 function App() {
 
   const[user, setUser] = useState({})
-  const[signedIn, setsignedIn] = useState(false)
 
   function handleCallbackResponse(response) {
     console.log("Encoded jwt id token: " + response.credential);
